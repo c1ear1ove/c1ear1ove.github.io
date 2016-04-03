@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_1_9_2</title>
+	<link rel="stylesheet" href="css/task_1_9_2.css">
+</head>
+<body>
+	<div id="container" class="clearfix">
+		<nav>
+			<img id="logo" src="img/task_1_9_1/nav_Logo.png" alt="nav logo">
+
+			<div id="search" class="clearfix">
+				<div id="search_Logo">
+					<img src="img/task_1_9_1/search_Logo.png" alt="serach logo">
+				</div>
+				<input type="text">
+				<div id="log_In">
+					<img src="img/task_1_9_1/log_in_Logo.png" alt="log-in logo">
+					<a href="#">登录</a>
+				</div>
+			</div>
+		</nav>
+		<aside>
+			<div id="user" class="clearfix">
+				<img src="img/hzy.jpg" alt="User Picture" id="user_Logo" width="53" height="53">
+				<span id="user_Name">Einstein</span>
+			</div>
+			<div id="user_Info" class="clearfix">
+				<div id="collection">
+					<p>110</p>
+					<p>收藏</p>
+				</div>
+				<div id="fans">
+					<p>313</p>
+					<p>粉丝</p>
+				</div>
+			</div>
+			<ul class="top_Menu">
+				<!-- 顶级菜单 -->
+				<li id="report_Forms"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/个人收藏.png" alt="icon"><a href="#">个人报表</a>
+					<!-- 二级菜单 -->
+					<ul class="second_Menu">
+						<li id="document_1"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/文件_暗.png" alt="icon"><a href="#">文件一</a></li>
+						<li id="document_2"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/文件_暗.png" alt="icon"><a href="#">文件二</a>
+							<!-- 三级菜单 -->
+							<ul class="third_Menu">
+								<li id="page_1"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/文档_暗.png" alt="icon"><a href="#">文档1</a></li>
+								<li id="page_2"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/文档_暗.png" alt="icon"><a href="#">文档2</a></li>
+							</ul>
+						</li>
+						<li id="document_3"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/文件_暗.png" alt="icon"><a href="#">文件三</a></li>
+					</ul>
+				</li>
+				<li id="my_Collections"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/个人收藏.png" alt="icon"><a href="#">个人收藏</a></li>
+				<li id="my_Favorites"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/我的分享.png" alt="icon"><a href="#">我的分享</a></li>
+				<li id="pictures"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/图库.png" alt="icon"><a href="#">图库</a></li>
+				<li id="grow_Records"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/成长记录.png" alt="icon"><a href="#">成长记录</a></li>
+				<li id="account_Info"><img src="img/task_1_9_1/右箭头.png" width="12" height="12" alt="右箭头" class="right_Pointer"><img width="12" height="12" src="img/task_1_9_1/账户信息.png" alt="icon"><a href="#">账户信息</a></li>
+			</ul>
+		</aside>
+		<div id="content">
+			<div id="file_Path"></div>
+			<div id="find_In_Doc" class="clearfix">
+				<div id="column">
+					<div id="column_1">
+						<p>
+							<label for="search_Items">查询项
+							<select name="Search_Items" id="search_Items">
+								<option value="first">第一项</option>
+								<option value="second">第二项</option>
+								<option value="third">第三项</option>
+							</select></label>
+						</p>
+					</div>
+
+					<div id="column_2">
+						<p>
+							<label for="buyer">买方</label>
+							<select name="Buyer" id="buyer">
+								<option value="Li Goudan">李狗蛋</option>
+								<option value="Wang Cuihua">王翠花</option>
+								<option value="Zhang Erya">张二丫</option>
+							</select>
+						</p>
+						<p>
+							<label for="seller">卖方</label>
+							<select name="Seller" id="seller">
+								<option value="Ye Liangchen">叶良辰</option>
+								<option value="Long Aotian">龙傲天</option>
+								<option value="Zhao Ritian">赵日天</option>
+							</select>
+						</p>
+					</div>
+
+					<div id="column_3" class="clearfix">
+						<p>
+							<label for="search_Date">日期</label>
+							<input type="text" id="search_Date">
+						</p>
+
+						<p>
+							<label for="time_Cost">总耗时</label>
+							<select name="Time_Cost" id="time_Cost">
+								<option value="8">8天</option>
+								<option value="9">9天</option>
+								<option value="10">10天</option>
+							</select>
+						</p>
+
+						<p>
+							<label for="popularity">人数</label>
+							<select name="Popularity" id="popularity">
+								<option value="10">10人</option>
+								<option value="11">11人</option>
+								<option value="12">12人</option>
+							</select>
+						</p>
+						
+						<p>
+							<label for="number_Of_Deal">成交项</label>
+							<select name="Number_Of_Deal" id="number_Of_Deal">
+								<option value="10">10项</option>
+								<option value="11">11项</option>
+								<option value="12">12项</option>
+							</select>
+						</p>
+					</div>
+
+					<input type="submit" value="搜索">
+				</div>
+			</div>
+			<div id="history_Search" class="clearfix">
+				<button><img src="img/task_1_9_1/历史查询_左箭头.png" alt="左箭头"></button>
+				<div class="history_Search_Result">
+					<time>10:00 am</time>
+					<p>
+						<small>¥</small>
+						<span>1200</span>
+					</p>
+				</div>
+				<div class="history_Search_Result">
+					<time>11:00 am</time>
+					<p>
+						<small>¥</small>
+						<span>1300</span>
+					</p>
+				</div>
+				<div class="history_Search_Result">
+					<time>12:00 am</time>
+					<p>
+						<small>¥</small>
+						<span>1200</span>
+					</p>
+				</div>
+				<div class="history_Search_Result">
+					<time>01:00 pm</time>
+					<p>
+						<small>¥</small>
+						<span>1400</span>
+					</p>
+				</div>
+				<div class="history_Search_Result">
+					<time>02:00 pm</time>
+					<p>
+						<small>¥</small>
+						<span>1500</span>
+					</p>
+				</div>
+				<div class="history_Search_Result">
+					<time>03:00 pm</time>
+					<p>
+						<small>¥</small>
+						<span>1800</span>
+					</p>
+				</div>
+				<button><img src="img/task_1_9_1/历史查询_右箭头.png" alt="右箭头"></button>
+				<div>
+					<img src="img/task_1_9_1/历史查询.png" alt="历史查询">
+					<span>历史查询</span>
+				</div>
+			</div>
+			<div id="statistic" class="clearfix">
+				<span>2016年4月份统计</span>
+				<div class="statistic_Result">
+					<span>133311</span>
+					<p>成交量</p>
+					<div></div>
+				</div>
+				<div class="statistic_Result">
+					<span>133311</span>
+					<p>成交量</p>
+					<div></div>
+				</div>
+				<div class="statistic_Result">
+					<span>133311</span>
+					<p>成交量</p>
+					<div></div>
+				</div>
+				<div class="statistic_Result">
+					<span>133311</span>
+					<p>成交量</p>
+					<div></div>
+				</div>
+			</div>
+			<div id="row_4" class="clearfix">
+				<div id="project">
+					<div class="info_Windows_Title">
+						<span>第一组项目</span>
+					</div>
+					<div id="project_Title">
+						<div id="project_1"><span>项目一</span></div>
+						<div id="project_2"><span>项目二</span></div>
+						<div id="project_3"><span>项目三</span></div>
+						<div id="project_4"><span>项目四</span></div>
+						<div id="project_5"><span>项目五</span></div>
+					</div>
+					<div id="project_Display">
+						<table>
+							<tr>
+								<th>购买材料一</th>
+								<th>购买材料一</th>
+								<th>购买材料一</th>
+								<th>购买材料一</th>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+							<tr>
+								<td>购买材料六</td>
+								<td>购买材料六</td>
+								<td>购买材料六</td>
+								<td>购买材料六</td>
+							</tr>
+							<tr>
+								<td>购买材料十三</td>
+								<td>购买材料十三</td>
+								<td>购买材料十三</td>
+								<td>购买材料十三</td>
+							</tr>
+							<tr>
+								<td>购买材料二十</td>
+								<td>购买材料二十</td>
+								<td>购买材料二十</td>
+								<td>购买材料二十</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="project_Info">
+				<div class="info_Windows_Title"><span>第一组项目</span></div>
+				<div id="project_Info_Display">
+					<div class="project_Info_Cells">
+						<p>标题</p>
+						<span>项目报表三</span>
+					</div>
+					<div class="project_Info_Cells">
+						<p>价格</p>
+						<span>¥158</span>
+					</div>
+					<div class="project_Info_Cells">
+						<p>负责人</p>
+						<span>小A</span>
+					</div>
+					<div class="project_Info_Cells">
+						<p>详细描述</p>
+						<span>该项目目前负责人是......</span>
+					</div>
+					<input type="checkbox"><span>遵守保密协定</span>
+					<button>搜索</button>
+				</div>
+			</div>
+			</div>
+			<div id="date">
+				<div class="info_Windows_Title"><span>日历</span></div>
+				<div id="choose_Date">
+					<select name="Year" id="year">
+						<option value="2010">2010年</option>
+						<option value="2011">2011年</option>
+						<option value="2012">2012年</option>
+						<option value="2013">2013年</option>
+						<option value="2014">2014年</option>
+						<option value="2015">2015年</option>
+						<option value="2016">2016年</option>
+					</select>
+
+					<select name="Month" id="month">
+						<option value="1">1月</option>
+						<option value="2">2月</option>
+						<option value="3">3月</option>
+						<option value="4">4月</option>
+						<option value="5">5月</option>
+						<option value="6">6月</option>
+						<option value="7">7月</option>
+						<option value="8">8月</option>
+						<option value="9">9月</option>
+						<option value="10">10月</option>
+						<option value="11">11月</option>
+						<option value="12">12月</option>
+					</select>
+
+					<button id="mark_Date">标注日期</button>
+					<button id="<back_Today></back_Today>">返回今天</button>
+				</div>
+				<table id="calendar">
+					<tr>
+						<th>一</th>
+						<th>二</th>
+						<th>三</th>
+						<th>四</th>
+						<th>五</th>
+						<th>六</th>
+						<th>日</th>
+					</tr>
+					<tr>
+						<td>
+							<span class="day"></span>
+							<p class="festival"></p>
+						</td>
+						<td>
+							<span class="day"></span>
+							<p class="festival"></p>
+						</td>
+						<td>
+							<span class="day"></span>
+							<p class="festival"></p>
+						</td>
+						<td>
+							<span class="day"></span>
+							<p class="festival"></p>
+						</td>
+						<td>
+							<span class="day">1</span>
+							<p class="festival">愚人节</p>
+						</td>
+						<td>
+							<span class="day">2</span>
+							<p class="festival">廿五</p>
+						</td>
+						<td>
+							<span class="day">3</span>
+							<p class="festival">廿六</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="day">4</span>
+							<p class="festival">廿七</p>
+						</td>
+						<td>
+							<span class="day">5</span>
+							<p class="festival">清明</p>
+						</td>
+						<td>
+							<span class="day">6</span>
+							<p class="festival">廿九</p>
+						</td>
+						<td>
+							<span class="day">7</span>
+							<p class="festival">三月</p>
+						</td>
+						<td>
+							<span class="day">8</span>
+							<p class="festival">初二</p>
+						</td>
+						<td>
+							<span class="day">9</span>
+							<p class="festival">初三</p>
+						</td>
+						<td>
+							<span class="day">10</span>
+							<p class="festival">初四</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="day">11</span>
+							<p class="festival">初五</p>
+						</td>
+						<td>
+							<span class="day">12</span>
+							<p class="festival">初六</p>
+						</td>
+						<td>
+							<span class="day">13</span>
+							<p class="festival">初七</p>
+						</td>
+						<td>
+							<span class="day">14</span>
+							<p class="festival">初八</p>
+						</td>
+						<td>
+							<span class="day">15</span>
+							<p class="festival">初九</p>
+						</td>
+						<td>
+							<span class="day">16</span>
+							<p class="festival">初十</p>
+						</td>
+						<td>
+							<span class="day">17</span>
+							<p class="festival">十一</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="day">18</span>
+							<p class="festival">十二</p>
+						</td>
+						<td>
+							<span class="day">19</span>
+							<p class="festival">十三</p>
+						</td>
+						<td>
+							<span class="day">20</span>
+							<p class="festival">十四</p>
+						</td>
+						<td>
+							<span class="day">21</span>
+							<p class="festival">十五</p>
+						</td>
+						<td>
+							<span class="day">22</span>
+							<p class="festival">十六</p>
+						</td>
+						<td>
+							<span class="day">23</span>
+							<p class="festival">十七</p>
+						</td>
+						<td>
+							<span class="day">24</span>
+							<p class="festival">十八</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="day">25</span>
+							<p class="festival">十九</p>
+						</td>
+						<td>
+							<span class="day">26</span>
+							<p class="festival">廿十</p>
+						</td>
+						<td>
+							<span class="day">27</span>
+							<p class="festival">廿一</p>
+						</td>
+						<td>
+							<span class="day">28</span>
+							<p class="festival">廿二</p>
+						</td>
+						<td>
+							<span class="day">29</span>
+							<p class="festival">廿三</p>
+						</td>
+						<td>
+							<span class="day">30</span>
+							<p class="festival">廿四</p>
+						</td>
+						<td>
+							<span class="day"></span>
+							<p class="festival"></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="rank">
+				<div class="info_Windows_Title"><span>汽车行业品牌榜</span></div>
+				<table id="car_Rank">
+					<tr>
+						<th>排名</th>
+						<th>品牌</th>
+						<th>搜索指数</th>
+					</tr>
+					<tr id="volkswagen">
+						<td>1</td>
+						<td>大众</td>
+						<td>
+							<span class="search_Index">48912001</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="toyota">
+						<td>2</td>
+						<td>丰田</td>
+						<td>
+							<span class="search_Index">29307333</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="audi">
+						<td>3</td>
+						<td>奥迪</td>
+						<td>
+							<span class="search_Index">23139070</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="honda">
+						<td>4</td>
+						<td>本田</td>
+						<td>
+							<span class="search_Index">22885564</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="ford">
+						<td>5</td>
+						<td>福特</td>
+						<td>
+							<span class="search_Index">22324792</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="bmw">
+						<td>6</td>
+						<td>宝马</td>
+						<td>
+							<span class="search_Index">21444077</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="hyundai">
+						<td>7</td>
+						<td>现代</td>
+						<td>
+							<span class="search_Index">20114969</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="kia">
+						<td>8</td>
+						<td>起亚</td>
+						<td>
+							<span class="search_Index">19251680</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="benz">
+						<td>9</td>
+						<td>奔驰</td>
+						<td>
+							<span class="search_Index">19172837</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+					<tr id="buick">
+						<td>10</td>
+						<td>别克</td>
+						<td>
+							<span class="search_Index">18544027</span>
+							<div class="ratio_L"></div>
+							<div class="ratio_R"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
