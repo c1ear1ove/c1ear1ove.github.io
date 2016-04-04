@@ -1,0 +1,65 @@
+/*一些通用设置*/
+*{
+	padding: 0;
+	margin: 0;
+}
+div:not([id="for_Layout"]){
+	padding: 20px;
+	border: 1px solid #999;
+}
+
+div > div:not([id="for_Layout"]){
+	background: white;
+}
+/*背景设置*/
+body{padding: 20px;}
+.container{
+	background: #eee;
+	position: relative;
+}
+
+/*内部三栏设置*/
+#team{
+	width: 160px;
+	float: left;
+}
+
+#for_Layout{
+	padding-left: 222px;
+}
+
+#introduction{
+/*用绝对定位会使其脱离container*/
+/*	float: left;*/
+/*	position: absolute;
+	left: 242px;
+	right: 162px;
+*/
+	float: left;
+	margin-right: 142px;
+}
+
+#person_Logo{
+	width: 80px;
+	float: left;
+	margin-left: -122px;
+}
+
+#person_Logo img{margin-top: 20px;}
+#person_Logo img:first-child{margin-top: 0;}
+
+
+
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}

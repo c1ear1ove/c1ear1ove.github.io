@@ -1,0 +1,774 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*对导航、侧栏、内容部分进行大布局*/
+
+	/*为三个元素的父元素设置高度，才能使100%奏效*/
+html,body,#container{
+	min-height: 100%;
+	height: 100%;
+}
+nav{
+	height: 56px;
+	background-color: #2189bf;
+}
+
+aside{
+	width: 258px;
+	height: 1208px;
+	float: left;
+	background-color: #2a2e3d;
+}
+
+#content{
+	height: 1208px;
+	margin-left: 258px;
+}
+
+nav,aside,#content{
+	position: relative;
+}
+
+/*大布局结束*/
+
+/*导航部分开始*/
+nav > div{
+	display: inline-block;
+}
+
+nav > #logo{
+	margin: 10px 0 10px 49px;
+}
+
+nav > #search{
+	height: 27px;
+	position: absolute;
+	right: 92px;
+	top: 14.5px;
+}
+
+nav > #search > #search_Logo{
+	/*display: inline-block;*/
+	background-color: white;
+	height: 27px;
+	width: 29px;
+	-webkit-border-bottom-left-radius: 13.5px;
+	   -moz-border-radius-bottomleft: 13.5px;
+	        border-bottom-left-radius: 13.5px;
+	-webkit-border-top-left-radius: 13.5px;
+	   -moz-border-radius-topleft: 13.5px;
+	        border-top-left-radius: 13.5px;
+
+	float: left;
+}
+nav > #search > #search_Logo img{
+	position: relative;
+	left: 12px;
+	top: 5px;
+}
+nav > #search > input:focus{
+	outline: none;
+}
+nav > #search > input{
+	width: 209px;
+	height: 27px;	
+	-webkit-border-top-right-radius: 13.5px;	
+	   -moz-border-radius-topright: 13.5px;	
+	        border-top-right-radius: 13.5px;
+	-webkit-border-bottom-right-radius: 13.5px;
+	   -moz-border-radius-bottomright: 13.5px;
+	        border-bottom-right-radius: 13.5px;
+	border-style: none;
+	padding-left: 3px;
+}
+
+nav > #search > #log_In{
+	display: inline-block;
+	margin-left: 20px;
+	height: 27px;
+}
+nav > #search > #log_In > img{
+	vertical-align: middle;
+}
+nav > #search > #log_In > a{
+	vertical-align: middle;
+	font: 12px 黑体;
+	color: white;
+	text-decoration: none;
+}
+/*导航部分结束*/
+
+/*左侧栏部分开始*/
+	/*头像和用户信息部分*/
+aside > #user{
+	height: 53px;
+	margin-top: 18px;
+	margin-left: 44px;
+	margin-bottom: 24px;
+	position: relative;
+}
+aside > #user > img{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	float: left;
+	padding: 2px;
+	-webkit-border-radius: 25.5px;
+	   -moz-border-radius: 25.5px;
+	        border-radius: 25.5px;
+	border: 1px solid #f6f5f5;
+}
+aside > #user > span{
+	position: relative;
+	top: 18.5px;
+	left: 19px;
+
+	font: 16px 黑体;
+	color: #f6f5f5;
+}
+
+aside > #user_Info{
+	width: 258px;
+	color: #6e8095;
+}
+#user_Info div{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 129px;
+	margin-bottom: 19px;
+	float: left;
+}
+#user_Info p{
+	font: 16px 黑体;
+	color: #6e8095;
+	width: 100%;
+}
+#user_Info p:last-child{
+	font: 12px 宋体;
+}
+#collection{
+	padding-right: 31px;
+	border-right: 1px solid #313545;
+}
+#collection p{
+	text-align: right;
+}
+#fans{
+	padding-left: 31px
+}
+#fans p{
+	text-align: left;
+}
+	
+	/*个人文档列表部分*/
+aside li{
+	list-style: none;
+	clear: both;
+}
+aside li img{
+	float: left;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+aside li a{
+	text-decoration: none;
+	color: #6e8095;
+	font: 16px 黑体;
+
+	float: left;
+	height: 16px;
+	vertical-align: middle;
+}
+.top_Menu > li{
+	padding-top: 19px;
+}
+ul > li{
+	display: inline-block;
+	width: 100%;
+	/*padding-top: 19px;*/
+	padding-bottom: 19px;
+}
+.top_Menu .right_Pointer{margin-left: 44px;}
+/*若通过 .right_Pointer来右移，则文件三永远不可能被访问。*/
+/*为li元素左侧留出空隙，可以绕过文件二选择文件一*/
+.second_Menu li{margin-left: 26px; }
+.third_Menu li{margin-left: 30px;}
+
+#report_Forms li:last-child{
+	padding-bottom: 0;
+}
+.second_Menu > li:first-child,.third_Menu > li:first-child{
+	margin-top: 19px;
+}
+
+.second_Menu,.third_Menu{
+	display: none;
+}
+ul > li:hover > a{
+	color: rgb(220,255,255);
+}
+.top_Menu > li:hover{
+	background-color: #383d4e;
+}
+ul > li:hover > .right_Pointer{
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+ul > li:hover > ul{
+	display: block;
+}
+ul > li:hover > img[alt=icon],ul > li:hover > .right_Pointer{
+	filter: brightness(2.0);
+	-webkit-filter: brightness(2.0);
+}
+	/*个人文档列表部分结束*/
+/*左侧栏部分结束*/
+
+/*中间content部分开始*/
+#content{
+	position: relative;
+	background-color: #eeeeed;
+	min-width: 1018px;
+}
+#file_Path{
+	height: 30px;
+	width: 100%;
+	background-color: white;
+}
+#content > div:not(#file_Path){
+	box-sizing: border-box;
+	/*该选择器优先级过高，导致后面的div不能修改*/
+	/*background-color: white;*/
+}
+	/*第一行查询部分开始*/
+#find_In_Doc{
+	background-color: white;
+	margin-top: 19px;
+	margin-left: 58px;
+	width: 889px;
+	padding: 14px 111px 14px 29px;
+	border: 1px solid #decee0;
+	height: 84px;
+	position: relative;
+}
+#column{
+	display: inline-block;
+	position: absolute;
+	left: 3.26%;
+/*	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+*/}
+#find_In_Doc div:not(#column){
+	/*display: inline-block;*/
+	height: 100%;
+	float: left;
+}
+#column div label{
+	font: 12px 黑体;
+	color: #aaaaaa;
+	margin-right: 5px;
+}
+#column_2{margin-left: 38px;}
+#column_3{margin-left: 32px;width: 300px;}
+#column > input{margin-left: 29px;}
+#find_In_Doc p{
+	height: 24px;
+	position: relative;
+}
+#find_In_Doc p label{
+	vertical-align: middle;
+}
+#find_In_Doc p input,#find_In_Doc p select{
+	height: 22px;
+	outline: none;
+	border: 1px solid gray;
+	vertical-align: middle;
+}
+#column_2 p:first-child{
+	margin-bottom: 4px;
+}
+#column_2 select{
+	width: 117px;
+}
+
+#column_3 p:nth-child(1) input{width: 117px;}
+#column_3 p:nth-child(2) select{width: 67px;}
+#column_3 p:nth-child(3) select{width: 67px;}
+#column_3 p:nth-child(4) select{width: 117px;}
+
+#column_3 p:nth-child(1),#column_3 p:nth-child(3){float: left;}
+#column_3 p:nth-child(2),#column_3 p:nth-child(4){float: right;}
+
+#column_3 p:nth-child(1),#column_3 p:nth-child(2){margin-bottom: 4px;}
+
+#column > input{
+	margin-top: 14.5px;
+	vertical-align: middle;
+	width: 49px;
+	height: 25px;
+	outline: none;
+	border: none;
+	background-color: #388ac1;
+	border-radius: 2px;
+	color: white;
+}
+	/*第一行查询部分结束*/
+
+	/*第二行历史查询开始*/
+#history_Search{
+	margin-top: 8px;
+	background-color: transparent;
+	height: 65px;
+	position: relative;
+	margin-left: 58px;
+}
+#history_Search > button,#history_Search > div{
+	height: 63px;
+	background-color: white;
+	display: inline-block;
+	margin-left: 5px;
+	border: 1px solid #decee0;
+	float: left;
+}
+#history_Search > button:first-child{
+	margin-left: 0;
+}
+#history_Search > button{
+	height: 65px;
+	width: 29px;
+	outline: 1px solid #decee0;
+	border: none;
+}
+#history_Search > button:hover{
+	background-color: silver;
+}
+.history_Search_Result{
+	width: 109px;
+	text-align: center;
+}
+.history_Search_Result time{
+	font: 12px Microsoft YaHei;
+	color: #323333;
+}
+.history_Search_Result p{
+	text-align: center;
+	line-height: 21px;
+
+	width: 107px;
+	position: absolute;
+	bottom: 8px;
+}
+.history_Search_Result small{
+	font: 16px sans-serif;
+	font-style: bold;
+	color: gray;
+}
+.history_Search_Result span{
+	font: 21px Microsoft YaHei;
+	color: #ec6500;
+	margin-left: -8px;
+}
+#history_Search > div:last-child{width: 124px;}
+#history_Search > div:last-child img{float: left;margin:15.5px 11px 0 17px;}
+#history_Search > div:last-child span{
+	float: left;
+	font: 12px Microsoft YaHei;
+	color: #323333;
+	line-height: 63px;
+	vertical-align: middle;
+}
+	/*第二行历史查询结束*/
+#row_4{display: inline-block; width: 100%;}
+	/*第三行统计部分开始*/
+#statistic{
+	margin-top: 22px;
+	width: 889px;
+	height: 91px;
+	margin-left: 58px;
+
+}
+#statistic > span{
+	display: inline-block;
+	margin-bottom: 3px;
+	font:12px Microsoft YaHei;
+	font-weight: bold;
+	color: #323333;
+	width: 100%;
+}
+.statistic_Result{
+	position: relative;
+	width: 196px;
+	height: 69px;
+	border-left-width: 3px;
+	border-left-style: solid;
+	box-shadow: 0px 0 1px gray;
+	background-color: white;
+	float: left;
+	margin-left: 30.5px;
+}
+#statistic > div:nth-child(2){border-left-color:#43b29e;}
+#statistic > div:nth-child(3){border-left-color:#388ac1;}
+#statistic > div:nth-child(4){border-left-color:#cf4a36;}
+#statistic > div:nth-child(5){border-left-color:#e2cd47;}
+#statistic > div:nth-child(2) div{background-color: #43b29e;}
+#statistic > div:nth-child(3) div{background-color: #388ac1;}
+#statistic > div:nth-child(4) div{background-color: #cf4a36;}
+#statistic > div:nth-child(5) div{background-color: #e2cd47;}
+
+#statistic > div:nth-child(2){margin-left: 0;}
+.statistic_Result > span{
+	display: inline-block;
+	font: 12px 黑体;
+	color: #323333;
+	margin-left: 8px;
+	margin-top: 20px;
+}
+.statistic_Result > p{
+	font: 10px 黑体;
+	color: #aaaaaa;
+	position: absolute;
+	bottom: 16px;
+	left:8px;
+}
+.statistic_Result > div{
+	height: 43px;
+	width: 57px;
+	position: absolute;
+	top: 13px;
+	right: 14px;
+	box-shadow: 0 0 1px;
+}
+	/*第三行统计部分结束*/
+
+	/*第四行左侧第一组项目开始*/
+#project{
+	width: 529px;
+	height: 354px;
+	box-shadow: 0 0 1px;
+	border-radius: 7px;
+	margin-top: 12px;
+	background-color: white;
+	float: left;
+	margin-left: 58px;
+}
+.info_Windows_Title{
+	border-bottom: 1px solid #decee0;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 39px;
+	background-color: #f4f5f6;
+}
+.info_Windows_Title span{
+	color: #aaaaaa;
+	font: 12px 黑体;
+	/*font-weight: bold;*/
+	margin-left: 20px;
+	line-height: 39px;
+	vertical-align: middle;
+}
+#project_Title{
+	box-sizing: border-box;
+	height: 28px;
+	margin: 12px 25px 0 19px;
+}
+#project_Title div{
+	box-sizing: border-box;
+	height: 28px;
+	width: 84px;
+	float: left;
+	margin-left: 4px;
+	background-color: #f4f5f6;
+	text-align: center;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	font: 12px 微软雅黑;
+	color: #535353;
+}
+#project_Title div span{
+	line-height: 28px;
+	vertical-align: middle;
+}
+#project_Title div:hover{
+	border:1px solid #decee0;
+	border-bottom: 0;
+	height: 29px;
+	border-bottom: 0;
+	background-color: white;
+}
+#project_Title div:first-child{
+	margin-left: 0;
+}
+#project_Display{
+	box-sizing: border-box;
+	height: 249px;
+	margin-left: 19px;
+	margin-right: 19px;
+	border: 1px solid #decee0;
+	border-radius: 6px; 
+	border-top-left-radius: 0;
+}
+#project_Display table{
+	margin: 28px 48px 35px 36px;
+	border-collapse: collapse;
+}
+#project_Display table th,#project_Display table td{
+	width: 100px;
+	height: 32px;
+	border: 1px solid #decee0;
+	text-align: left;
+	padding-left: 17px;
+	vertical-align: middle;
+	font: 12px 宋体;
+	color: #535353;
+}
+#project_Display table tr th:first-child{
+	background-color: #f4f5f6;
+}
+
+	/*第四行左侧第一组项目结束*/
+	/*第四行右侧项目开始*/
+#project_Info{
+	box-sizing: border-box;
+	width: 349px;
+	height: 354px;
+	float: left;
+	margin-left: 9px;
+	margin-top: 12px;
+	border-radius: 7px;
+	box-shadow: 0 0 1px;
+	background-color: white;
+}
+.project_Info_Cells{
+	padding-left: 15px;
+}
+.project_Info_Cells p{
+	font: 12px 微软雅黑;
+	color: #c3c2c2;
+}
+.project_Info_Cells span{
+	font: 12px 微软雅黑;
+	color: #535353;
+}
+#project_Info_Display{
+	box-sizing: border-box;
+	padding-top: 17px;
+	padding-left: 34px;
+	background-color: white;
+	width: 100%;
+	position: relative;
+}
+#project_Info_Display > div:nth-child(1){
+	height: 40px;
+	margin-right: 37px;
+	border-bottom: 1px solid #ecdee0;
+}
+#project_Info_Display > div:nth-child(2){
+	box-sizing: border-box;
+	width: 95px;
+	height: 43px;
+	border-right: 1px solid #ecdee0;
+	border-bottom: 1px solid #ecdee0;
+	float: left;
+}
+#project_Info_Display > div:nth-child(3){
+	box-sizing: border-box;
+	display: block;
+	height: 43px;
+	border-bottom: 1px solid #ecdee0;
+	margin-left: 95px;
+}
+#project_Info_Display > div:nth-child(4){
+	box-sizing: border-box;
+	margin-right: 37px;
+	height: 145px;
+	border-bottom: 1px solid #ecdee0;
+	margin-bottom: 11px;
+}
+#project_Info_Display input{
+	margin-right: 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 0;
+	vertical-align: middle;
+}
+#project_Info_Display > span{
+	font: 12px 微软雅黑;
+	color: #c3c2c2;
+	vertical-align: middle;
+}
+#project_Info_Display > button{
+	box-sizing: border-box;
+	width: 49px;
+	height: 25px;
+	background-color: #388ac1;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	border-radius: 2px;
+	position: absolute;
+	right: 34px;
+}
+	/*第四行右侧项目结束*/
+
+	/*第五行日历部分开始*/
+#date{
+	float: left;
+	margin: 7px 9px 0 58px;
+	box-sizing: border-box;
+	width: 349px;
+	height: 354px;
+	box-shadow: 0 0 1px;
+	border-radius: 7px;
+	background-color: white;
+}
+#date>div:not(.info_Windows_Title),#date>table{margin-left:21px;}
+#choose_Date select,#choose_Date button{
+	box-sizing: border-box;
+	background-color: white;
+	border: 2px solid #decee0;
+	height: 22px;
+	margin-top: 9px;
+	font: 12px 黑体;
+	color: #535353;
+}
+#year{width: 65px;} #month{width: 85px;}
+#mark_Date{width: 74px;} #back_Today{width: 65px;}
+#calendar{
+	margin-top: 9px;
+	border-collapse: collapse;/*必须设置合并边框tr的边框效果才会出现*/
+}
+#calendar th,#calendar td{
+	box-sizing: border-box;
+	height: 44.29px;
+	width: 44.29px;
+	color: #323333;
+	text-align: center;
+}
+#calendar th{font: 12px 黑体;vertical-align: middle;}
+#calendar td{font: 11.36px 黑体;vertical-align: middle;}
+
+#calendar tr:first-child{
+	border-top:2px solid #a9cfec;
+	border-bottom: 2px solid #decee0;
+}
+#calendar tr:nth-child(2) td:nth-child(5) .festival,
+#calendar tr:nth-child(3) td:nth-child(2) .festival{
+	color: red;
+}
+#calendar td:nth-child(6) > .day,
+#calendar td:nth-child(7) > .day{
+	color: red;
+}
+#calendar tr:nth-child(3) td:nth-child(6),
+#calendar tr:nth-child(4) td:nth-child(2),
+#calendar tr:nth-child(5) td:nth-child(2){
+	border: 1px solid #f5cf2a;
+}
+	/*第五行日历部分结束*/
+
+	/*第五行汽车行业品牌榜开始*/
+#rank{
+	float: left;
+	margin-top: 7px; 
+	width: 529px;
+	height: 354px;
+	border-radius: 7px;
+	background-color: white;
+	box-shadow: 0 0 1px;
+}
+#car_Rank{
+	margin: 17px 0 0 39px;
+	border-collapse: collapse;
+}
+#car_Rank td,#car_Rank th{
+	box-sizing: border-box;
+	height: 25px;
+	border: 2px solid #decee0;
+}
+#car_Rank th:first-child,#car_Rank td:first-child{width: 69px;text-align: center;}
+#car_Rank th:nth-child(2),#car_Rank td:nth-child(2){width: 93px;text-align: center;}
+#car_Rank th:nth-child(3),#car_Rank td:nth-child(3){width: 293px;text-align: left;}
+#car_Rank th{
+	font: 13px 黑体;
+	font-weight: bold;
+	color: #231815;
+}
+#car_Rank td{
+	font: 12px 黑体;
+	color: #323333;
+	position: relative;
+}
+#car_Rank th:nth-child(3){padding-left: 29px;}
+.search_Index{
+	/*display:inline-block;*/
+	float: left;
+	line-height: 21.3px;
+	width: 80px;
+	text-align: right;
+	vertical-align: middle;
+}
+.ratio_L,.ratio_R{
+	float: left;
+	/*height: 100%;*/
+	height: 4px;
+	position: relative;
+	top: 50%;
+	margin-top: -2px;
+	/*padding: 8.5px 0 8.5px 0;*/
+}
+.ratio_L{margin-left: 22px;background-color: #7fcbf0;}
+.ratio_R{background-color: #dddddd;}
+#volkswagen .ratio_L{width: 164.3px;background-color: #ec6d51;}
+#volkswagen .ratio_R{width: 3.7px;}
+
+#toyota .ratio_L{width: 98.5px;background-color: #ee804f;}
+#toyota .ratio_R{width: 69.5px;}
+
+#audi .ratio_L{width: 77.7px;background-color: #f19e4f;}
+#audi .ratio_R{width: 90.3px;}
+
+#honda .ratio_L{width: 76.9px;}
+#honda .ratio_R{width: 91.9px;}
+
+#ford .ratio_L{width: 75.0px;}
+#ford .ratio_R{width: 93.0px;}
+
+#bmw .ratio_L{width: 72.1px;}
+#bmw .ratio_R{width: 95.9px;}
+
+#hyundai .ratio_L{width: 67.6px;}
+#hyundai .ratio_R{width: 100.4px;}
+
+#kia .ratio_L{width: 64.7px;}
+#kia .ratio_R{width: 103.3px;}
+
+#benz .ratio_L{width: 64.4px;}
+#benz .ratio_R{width: 103.6px;}
+
+#buick .ratio_L{width: 62.3px;}
+#buick .ratio_R{width: 105.7px;}
+	/*第五行汽车行业品牌榜结束*/
+/*中间content部分结束*/
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}

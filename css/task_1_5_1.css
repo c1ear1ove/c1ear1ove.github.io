@@ -1,0 +1,233 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei",sans-serif;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+body{background-color: rgb(222,222,222);}
+
+/*布局*/
+body>div:not([id=side_Bar]){
+	margin-right: 580px;
+	/*float: left;*/
+}
+#side_Bar{
+	width: 500px;
+	float: right;
+	position: absolute;
+	top: 110px;
+	right: 20px;
+}
+/*大布局结束*/
+
+/*导航部分*/
+nav{
+	background-color: rgb(51,51,51);
+	height: 90px;
+	width: 100%;
+	position: relative;
+}
+
+nav h1{
+	display:inline;
+	color:white;
+	line-height: 90px;
+	margin-left: 50px;
+}
+
+nav ul{
+	display: inline-block;
+
+	height: 90px;
+	position: absolute;
+	right: 20px;
+}
+nav ul a{
+	display: inline-block;
+	font-size: 15px;
+	padding-left: 3px;
+	padding-right: 3px;
+	height: 90px;
+}
+
+nav ul a:hover{background-color: orange;}
+
+nav ul a li{
+	display:inline;
+	line-height: 90px;
+	vertical-align: middle;
+	font-weight: lighter;
+	color: white;
+}
+/*导航部分结束*/
+
+/*文章部分*/
+body > div:not([id="side_Bar"]){
+	margin-top: 20px;
+	margin-left: 20px;
+}
+body > div{
+	padding: 20px;
+	background-color: white;
+	-moz-box-shadow:#666 3px 3px 10px;
+	-webkit-box-shadow:#666 3px 3px 10px;
+	box-shadow:#666 3px 3px 10px;
+}
+
+#last_Passage article{
+	margin-bottom: 20px;
+}
+
+.passageTitle{
+	border-left: 10px solid dodgerblue;
+	padding-left: 15px
+}
+
+.second_PassageTitle{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+	color:gray;
+}
+
+article .author,article .publish_Time{
+	display: inline-block;
+	color:gray;
+}
+
+article > section > img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+article > section{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+article > section > ul{
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+article > section > ul > li{margin-top: 10px;}
+article > section > ul > li:last-child{margin-bottom: 10px;}
+/*文章部分结束*/
+
+/*teemo图片部分*/
+#good_Picture figure{
+	/*padding: 10px;*/
+	border: 1px solid silver;
+	width: 240px;
+
+	display: inline-block;
+	/*display: block;*/
+	margin: 20px 10px 10px 30px;
+}
+
+#good_Picture figure p{
+	text-align: center;
+	line-height: 41.1px;
+}
+#good_Picture figure img{
+	padding: 20px;
+	padding-top: 0;
+}
+/*teemo图片部分结束*/
+
+/*最后一文部分*/
+.rank{margin-left: 20px;}
+.rank > p{font-weight: bold;}
+.rank > ol{margin-left: 45px;}
+.rank > ol > li{margin-top: 15px;}
+.rank > ol > li:last-child{margin-bottom: 15px;}
+
+table{
+	width: 99.9%;
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+th,td{
+	width: 33.3%;
+	text-align: left;
+	vertical-align: middle;
+	border: 1px solid silver;
+	padding-left: 10px;
+}
+th{
+	background-color:black;
+	color: white;
+	font-weight: bold;
+}
+tr:last-child > td{
+	background-color: gray;
+	font-weight: bold;
+}
+td:hover{
+	background-color: dodgerblue;
+	color: white;
+}
+/*最后一文部分结束*/
+
+/*侧边栏部分*/
+
+	/*标签右对齐*/
+#side_Bar > aside > form{
+	position:relative;
+}
+.input_Caution{
+	display: inline-block;
+	width: 40%;
+	line-height: 25px;
+	text-align: right;
+	vertical-align: middle;
+}
+.caution{
+	color: gray;
+	display: inline-block;
+	position: relative;
+	left: 40%;
+	margin-top: 8px;
+	margin-left: 15px;
+	/*多了5px刚好对齐，简直幸运=。=*/
+}
+
+#side_Bar input,select,textarea{
+	vertical-align: middle;
+	margin-left: 10px;
+}
+	/*设置垂直间距*/
+aside p{
+	display: block;
+	margin-top: 15px;
+}
+#input_Password p:last-child{margin-top: 5px;}
+
+	/*个人描述和textarea顶部对齐+Button设置*/
+aside > form > p:last-child > label{vertical-align: top;}
+#side_Bar input[type="submit"]{
+	display: block;
+	width: 100%;
+	height: 30px;
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+/*侧边栏结束*/
+
+/*网页页脚*/
+footer{
+	width: 100%;
+	color: white;
+	text-align: center;
+	background-color: black;
+}
+/*页脚部分结束*/

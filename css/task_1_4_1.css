@@ -1,0 +1,31 @@
+#rect{
+	height: 200px;
+	width: 400px;
+	background: #ccc;
+	/*margin: 0 auto;*/
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+}
+
+#arc1,#arc2{
+	background-color: orange;
+	width: 50px;
+	height: 50px;
+}
+
+#arc1{
+	border-bottom-right-radius: 50px;
+}
+
+#arc2{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-top-left-radius: 50px;
+}
